@@ -44,6 +44,7 @@ function mergeSorted(arr1, arr2) {
     }
   }
 
+  // 一个数组到头了 → 把另一个数组剩下的全放进去
   while (i < arr1.length) {
     result.push(arr1[i]);
     i++;
@@ -51,7 +52,7 @@ function mergeSorted(arr1, arr2) {
 
   while (j < arr2.length) {
     result.push(arr2[j]);
-    j++; 
+    j++;
   }
 
   return result;
